@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="48" height="48" viewBox="0 0 48 48">
+  <defs>
+    <clipPath id="clip-footer_ars">
+      <rect width="48" height="48"/>
+    </clipPath>
+  </defs>
+  <g id="footer_ars" clip-path="url(#clip-footer_ars)">
+    <g id="Group_1" data-name="Group 1" transform="translate(8 11)">
+      <path id="Rectangle_150366" data-name="Rectangle 150366" d="M4,0H5.492a0,0,0,0,1,0,0V10.482a0,0,0,0,1,0,0H4a4,4,0,0,1-4-4V4A4,4,0,0,1,4,0Z" transform="translate(-0.493 9.519)" fill="#fff"/>
+      <path id="Rectangle_150367" data-name="Rectangle 150367" d="M0,0H1A4,4,0,0,1,5,4V6a4,4,0,0,1-4,4H0a0,0,0,0,1,0,0V0A0,0,0,0,1,0,0Z" transform="translate(29 10.001)" fill="#fff"/>
+      <rect id="Rectangle_150368" data-name="Rectangle 150368" width="8.984" height="3.743" rx="1.872" transform="translate(12.508 24.257)" fill="#fff"/>
+      <path id="Path_95667" data-name="Path 95667" d="M14.347,27.878H7.283C3.675,27.878.75,24.628.75,20.62V13.363C.75,6.147,6.014,1.75,12.509,1.75s11.759,4.4,11.759,11.613v8.391" transform="translate(4.491 -1.75)" fill="none" stroke="#fff" stroke-width="1.5"/>
+    </g>
+  </g>
+</svg>

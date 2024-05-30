@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+  <g id="popup_ico_close" transform="translate(85.966 -259.573) rotate(90)">
+    <rect id="Rectangle_150623" data-name="Rectangle 150623" width="20" height="20" transform="translate(259.573 65.966)" fill="#fff" opacity="0"/>
+    <g id="Group_26277" data-name="Group 26277" transform="translate(262.038 68.709)">
+      <line id="Line_50" data-name="Line 50" y2="20.918" transform="translate(14.792 0) rotate(45)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="1.5"/>
+      <line id="Line_51" data-name="Line 51" x2="20.918" transform="translate(0 0) rotate(45)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="1.5"/>
+    </g>
+  </g>
+</svg>

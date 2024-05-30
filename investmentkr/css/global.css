@@ -1,0 +1,40 @@
+@charset "utf-8";
+
+:root {
+    --color-Black: #222222;
+    --color-White: #FFFFFF;
+    --color-wine: #771039;
+    --color-wine2: #a90f39;
+    --color-light_Wine: #B73757;
+    --color-Green: #0D8732;
+    --color-blueGreen: #008489;
+    --color-light_blueGreen: #00A3AA;
+    --color-sub1: #DEF1F2;
+    --color-sub2: #FBEDF1;
+    --color-sub3: #FFF2DB;
+    --color-gray1: #D9D9D9;
+    --color-gray2: #F5F5F5;
+    --color-gray3: #ECECEC;
+}
+
+/* font-size */
+
+.tit12 {
+    font-size: 12px;
+}
+
+.tit14 {
+    font-size: 14px;
+}
+
+.tit22 {
+    font-size: 22px;
+}
+
+.tit24 {
+    font-size: 24px;
+}
+
+.tit32 {
+    font-size: 32px;
+}

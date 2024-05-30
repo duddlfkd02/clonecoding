@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+  <g id="ic_arrow_right" transform="translate(5 -2)">
+    <rect id="img_area" width="16" height="16" transform="translate(-5 2)" fill="none"/>
+    <g id="arrow_s" transform="translate(-1 2)">
+      <rect id="사각형_147667" data-name="사각형 147667" width="8" height="16" fill="red" opacity="0"/>
+      <path id="패스_83453" data-name="패스 83453" d="M587,605l6,6-6,6" transform="translate(-585.5 -603)" fill="none" stroke="#888" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+    </g>
+  </g>
+</svg>

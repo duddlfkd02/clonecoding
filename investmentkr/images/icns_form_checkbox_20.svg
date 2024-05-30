@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="40" viewBox="0 0 20 40">
+  <defs>
+    <clipPath id="clip-icns_form_checkbox_20">
+      <rect width="20" height="40"/>
+    </clipPath>
+  </defs>
+  <g id="icns_form_checkbox_20" clip-path="url(#clip-icns_form_checkbox_20)">
+    <g id="Group_1" data-name="Group 1" transform="translate(-0.434 21.667)">
+      <g id="Group_163362" data-name="Group 163362" transform="translate(0.434 -1.667)">
+        <g id="Rectangle_148242" data-name="Rectangle 148242" transform="translate(0 0)" fill="rgba(255,255,255,0.2)" stroke="#fff" stroke-width="1">
+          <rect width="20" height="20" rx="5" stroke="none"/>
+          <rect x="0.5" y="0.5" width="19" height="19" rx="4.5" fill="none"/>
+        </g>
+      </g>
+    </g>
+    <g id="Group_163364" data-name="Group 163364" transform="translate(-20)">
+      <g id="Group_163363" data-name="Group 163363" transform="translate(19.566 1.667)">
+        <g id="Group_163362-2" data-name="Group 163362" transform="translate(0.434 -1.667)">
+          <g id="Rectangle_148242-2" data-name="Rectangle 148242" transform="translate(0 0)" fill="rgba(255,255,255,0.2)" stroke="#fff" stroke-width="1">
+            <rect width="20" height="20" rx="5" stroke="none"/>
+            <rect x="0.5" y="0.5" width="19" height="19" rx="4.5" fill="none"/>
+          </g>
+        </g>
+      </g>
+      <g id="Group_163362-3" data-name="Group 163362" transform="translate(5.312 -2.434)">
+        <path id="Path_84744" data-name="Path 84744" d="M306,326.921l3.69,3.727,6.4-6.4" transform="translate(-286.356 -314.213)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+    </g>
+  </g>
+</svg>

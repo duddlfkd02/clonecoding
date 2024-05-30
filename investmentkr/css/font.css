@@ -1,0 +1,23 @@
+@charset "utf-8";
+
+/* 로컬 폰트 정의 */
+@font-face {
+    font-family: 'Noto Sans';
+    font-weight: 700;
+    font-display: swap;
+    src: local('NotoSansKR Bold'), url(../font/NotoSansKR-Bold.woff) format('woff');
+}
+
+@font-face {
+    font-family: 'Noto Sans';
+    font-weight: 500;
+    font-display: swap;
+    src: local('NotoSansKR Medium'), url(../font/NotoSansKR-Medium.woff) format('woff');
+}
+
+@font-face {
+    font-family: 'Noto Sans';
+    font-weight: 400;
+    font-display: swap;
+    src: local('NotoSansKR Regular'), url(../font/NotoSansKR-Regular.woff) format('woff');
+}
