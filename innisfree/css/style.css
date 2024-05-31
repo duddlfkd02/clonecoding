@@ -9,6 +9,11 @@ button {
     cursor: pointer;
 }
 
+.contentWith {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
 
 /* banner-top */
 .banner-top {
@@ -157,4 +162,74 @@ header .innerHeader .header_dire .dire_btn .dire_btn_list .cart_count {
 
 .nav_wrap .nav_inner.about {
     text-align: end;
+}
+
+/* section.category */
+section.category .sub_category .sub_category_list {
+    display: flex;
+    align-items: center;
+    height: 60px;
+    border-top: 1px solid var(--color_gray4);
+    border-bottom: 1px solid var(--color_gray5);
+}
+
+section.category .sub_category .sub_category_list>li {
+    margin-left: 10px;
+    cursor: pointer;
+    position: relative;
+}
+
+section.category .sub_category .sub_category_list>li::before {
+    content: "";
+    display: inline-block;
+    opacity: 0.3;
+    width: 8px;
+    height: 8px;
+    margin: 0 8px;
+    background: url('../images/arr_r16_gray.png') no-repeat 50% 50%;
+}
+
+section.category .sub_category .sub_category_list>li::after {
+    content: "";
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    margin-left: 5px;
+    background: url('../images/arr_location_gray.png') no-repeat 50% 50%;
+}
+
+section.category .sub_category .sub_category_list>li:first-child {
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+section.category .sub_category .sub_category_list>li:first-child::before {
+    display: none;
+}
+
+section.category .sub_category .sub_category_list>li:first-child::after {
+    display: none;
+}
+
+section.category .sub_category .sub_category_list>li>.sub_category_inner {
+    position: absolute;
+    background: var(--color_white);
+    border: 1px solid var(--color_gray5);
+    max-height: 420px;
+    width: 170px;
+    top: 25px;
+    left: 20px;
+    padding: 0 10px;
+    display: none;
+}
+
+section.category .sub_category .sub_category_list>li>.sub_category_inner>li {
+    padding: 10px 15px;
+    color: var(--color_darkGray);
+}
+
+section.category .sub_category .sub_category_list>li>.sub_category_inner>li:hover {
+    font-weight: 700;
+    color: var(--color-accent);
 }

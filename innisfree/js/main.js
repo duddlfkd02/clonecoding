@@ -17,3 +17,16 @@ $(document).ready(function () {
 
     setInterval(schRolling, 1500) //1500ms마다 자동롤링
 });
+/*서브카테고리 슬라이드*/
+$(function () {
+    let cateMain = $('.sub_category_list > li');
+    let cateSub = $('.sub_category_list > li > .sub_category_inner >li');
+
+    $(cateMain).on('mouseover', function () {
+        $(this).children(cateSub).stop().slideDown()
+    })
+
+    $(cateMain).on('mouseleave', function () {
+        $(this).children(cateSub).stop().slideUp()
+    })
+})
