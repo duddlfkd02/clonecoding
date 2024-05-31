@@ -6,6 +6,7 @@
 input,
 button {
     all: unset;
+    cursor: pointer;
 }
 
 
@@ -102,4 +103,58 @@ header .innerHeader .header_dire .dire_btn .dire_btn_list .cart_count {
     color: var(--color_white);
     position: absolute;
     top: 67px;
+}
+
+/* nav */
+.nav_wrap {
+    max-width: 1280px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 32px
+}
+
+.nav_wrap .nav_inner {
+    font-weight: 800;
+    width: calc(100% / 3);
+}
+
+.nav_wrap .nav_inner .category>span {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.nav_wrap .gnb .gnb_list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav_wrap .gnb .gnb_list>li {
+    margin-right: 30px;
+    position: relative;
+}
+
+.nav_wrap .gnb .gnb_list>li:last-child {
+    margin-right: 0;
+}
+
+.nav_wrap .gnb .gnb_list>li:first-child ::after {
+    content: "";
+    width: 6px;
+    height: 6px;
+    border-radius: 5px;
+    background: var(--color-accent);
+    position: absolute;
+    top: 24px;
+}
+
+.nav_wrap .gnb .gnb_list>li>a {
+    display: inline-block;
+    line-height: 80px;
+    height: 80px;
+}
+
+.nav_wrap .nav_inner.about {
+    text-align: end;
 }
