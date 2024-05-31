@@ -10,10 +10,66 @@
     <meta property="og:url" content="배포 후 생성 url">
     <meta property="og:image" content="./images/logo_innisfree.png">
     <title>이니스프리 노세범 파우더</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/font.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- JS -->
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/main.js"></script>
 </head>
 
 <body>
+    <div class="banner-top fs14">
+        <p>비씨카드 #마이태그 5천원 결제일 할인<img src="images/ico_close16_white.png" alt=""></p>
+    </div>
+    <header class="header">
+        <div class="innerHeader">
+            <div class="logo">
+                <img src="images/logo_innisfree.png" alt="이니스프리 로고">
+            </div>
+            <fieldset class="innerHeader_sch">
+                <legend>검색어 입력</legend>
+                <input type="text" class="header_sch fs14">
+                <button class="btn">
+                    <div class="sch_icon">
+                        <img src="images/ico_search24_black.png" alt="검색">
+                    </div>
+                </button>
+                <!-- 검색창 텍스트 롤링 -->
+                <div class="scroll_text fs14">
+                    <ul class="scrollRoll" id="ticker">
+                        <li>보습과 선케어를 한번에! 그린티 수분 선 세럼</li>
+                        <li>그린티 장인 이니스프리 그린티 함유 제품 특가</li>
+                    </ul>
+                </div>
+            </fieldset>
 
+            <div class="header_dire">
+                <ul class="dire_btn fs12">
+                    <li class="dire_btn_list">
+                        <a href="#">
+                            <img src="images/ico_login24_black.png" alt="로그인">
+                            <span>로그인</span>
+                        </a>
+                    </li>
+                    <li class="dire_btn_list">
+                        <a href="#">
+                            <img src="images/ico_mypage24_black.png" alt="마이페이지">
+                            <span>마이페이지</span>
+                        </a>
+                    </li>
+                    <li class="dire_btn_list">
+                        <a href="#">
+                            <img src="images/ico_cart24_black.png" alt="장바구니">
+                            <span>장바구니</span>
+                            <span class="cart_count">0</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
 </body>
 
 </html>

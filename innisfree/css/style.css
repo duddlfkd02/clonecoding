@@ -1,1 +1,105 @@
 @charset "utf-8";
+@import url('reset.css');
+
+/* 공통속성 */
+/* input, 버튼 */
+input,
+button {
+    all: unset;
+}
+
+
+/* banner-top */
+.banner-top {
+    height: 50px;
+    line-height: 50px;
+    color: var(--color_white);
+    background: var(--color_black);
+}
+
+.banner-top>p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner-top>p>img {
+    margin-left: 15px;
+    margin-top: -3px;
+}
+
+/*header */
+header .innerHeader {
+    max-width: 1280px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 25px;
+}
+
+header .innerHeader .innerHeader_sch {
+    position: relative;
+    width: 560px;
+    display: flex;
+    justify-content: space-between;
+    color: #999999;
+    border-bottom: 2px solid var(--color_black);
+    padding-right: 10px;
+}
+
+header .innerHeader .innerHeader_sch>legend {
+    display: none;
+}
+
+header .innerHeader .scroll_text {
+    position: absolute;
+    height: 50px;
+    overflow: hidden;
+    left: 2px;
+    top: -12px;
+}
+
+header .innerHeader .scroll_text .scrollRoll {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+header .innerHeader .scroll_text .scrollRoll>li {
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+}
+
+/* header_dire */
+header .innerHeader .header_dire .dire_btn {
+    display: flex;
+}
+
+header .innerHeader .header_dire .dire_btn .dire_btn_list {
+    text-align: center;
+    margin: 0 8px;
+}
+
+header .innerHeader .header_dire .dire_btn .dire_btn_list>a>span {
+    display: block;
+    text-align: center;
+    color: var(--color_darkGray);
+    margin-top: 5px;
+    position: relative;
+}
+
+header .innerHeader .header_dire .dire_btn .dire_btn_list .cart_count {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border-radius: 10px;
+    font-size: 10px;
+    line-height: 16px;
+    font-weight: 700;
+    background: var(--color-accent);
+    color: var(--color_white);
+    position: absolute;
+    top: 67px;
+}

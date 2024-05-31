@@ -6,6 +6,7 @@
     --color-accent2: #009D5E;
     --color-sub1: #5AC6C6;
     --color-sub2: #F4F3F0;
+    --color_white: #FFFFFF;
     --color_black: #000000;
     --color_darkBlack: #3c3c3c;
     --color_darkGray: #666666;
@@ -17,6 +18,10 @@
 
 
     /* font-size */
+    .fs12 {
+        font-size: 0.75rem;
+    }
+
     .fs13 {
         font-size: 0.813rem;
     }
