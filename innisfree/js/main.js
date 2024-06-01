@@ -55,13 +55,13 @@ $(function () {
 
 let plus = document.querySelector('.plusBtn');
 let minus = document.querySelector('.minusBtn');
-let result = document.getElementById('result');
+let result = document.querySelector('.pdtcalc');
 let totalCost = document.querySelector('.pdtTot_Sum');
 let i = 1;
 
 plus.addEventListener('click', function () {
     i++
-    result.textContent = i;
+    result.value = i;
     let totalPrice = i * 9000;
     totalCost.textContent = totalPrice.toLocaleString();
 });
@@ -69,7 +69,7 @@ plus.addEventListener('click', function () {
 minus.addEventListener('click', function () {
     if (i > 0) {
         i--
-        result.textContent = i;
+        result.value = i;
         let totalPrice = i * 9000;
         totalCost.textContent = totalPrice.toLocaleString();
     } else {
