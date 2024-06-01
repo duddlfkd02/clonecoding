@@ -11,10 +11,13 @@
     <meta property="og:image" content="./images/logo_innisfree.png">
     <title>이니스프리 노세범 파우더</title>
     <!-- CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/global.css">
     <link rel="stylesheet" href="css/font.css">
     <link rel="stylesheet" href="css/style.css">
     <!-- JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/swiper.js"></script>
     <script src="js/jquery-3.7.1.min.js"></script>
     <script src="js/main.js"></script>
 </head>
@@ -70,6 +73,7 @@
             </div>
         </div>
     </header>
+    <!-- 메뉴 -->
     <div class="nav_wrap">
         <div class="nav_inner">
             <button class="category">
@@ -92,7 +96,7 @@
         </div>
     </div>
     <!-- 서브카테고리 -->
-    <section class="category contentWith">
+    <section class="category" id="contentWith">
         <div class="sub_category">
             <ul class="sub_category_list fs12">
                 <li>
@@ -147,7 +151,125 @@
             </ul>
         </div>
     </section>
+    <!-- 메인 -->
+    <main>
+        <!-- 상품 가격 -->
+        <section id="contentWith" class="slide_content">
+            <div class="swiper_container">
+                <div class="pdtslide mySwiper2 swiper">
+                    <ul class="pdtslide_list swiper-wrapper">
+                        <li class="swiper-slide">
+                            <img src="images/main_slide_01.jpeg" />
+                        </li>
+                        <li class="swiper-slide">
+                            <img src="images/main_slide_02.jpg" />
+                        </li>
+                        <li class="swiper-slide">
+                            <img src="images/main_slide_03.jpg" />
+                        </li>
+                        <li class="swiper-slide">
+                            <img src="images/main_slide_04.jpg" />
+                        </li>
+                    </ul>
+                </div>
+                <!-- swiper 썸네일 -->
+                <div thumbsSlider="" class="swiper pdtslideThumb mySwiper">
+                    <ul class="swiper-wrapper">
+                        <li class="swiper-slide">
+                            <img src="images/main_slide_01.jpeg" />
+                        </li>
+                        <li class="swiper-slide">
+                            <img src="images/main_slide_02.jpg" />
+                        </li>
+                        <li class="swiper-slide">
+                            <img src="images/main_slide_03.jpg" />
+                        </li>
+                        <li class="swiper-slide">
+                            <img src="images/main_slide_04.jpg" />
+                        </li>
+                        <div class="swiper_control">
+                            <div class="swiper-button-next">
+                                <img src="images/arr_r24_gray.png" alt="화살표">
+                            </div>
+                            <div class="swiper-button-prev">
+                                <img src="images/arr_r24_gray.png" alt="화살표">
+                            </div>
+                        </div>
 
+                    </ul>
+                </div>
+            </div>
+            <div class="pdt_content_wrap">
+                <div class="pdt_content">
+                    <div class="title">
+                        <span class="pdtToptxt fs18">
+                            2개 이상 구매 시 40% 할인
+                        </span>
+                        <h2 class="fs40">
+                            <strong>BEST</strong>노세범 미네랄 파우더 5g
+                        </h2>
+                    </div>
+                    <div class="pdt_price">
+                        <h3 class="fs28">9000</h3>
+                        <span>
+                            <img src="images/stars_grade.png" alt="별 평점">
+                            4.8
+                        </span>
+                        <span class="fs14">999+ 건 리뷰</span>
+                    </div>
+                    <div class="pdt_review fs13">
+                        <p>
+                            이 제품을 구매하신 고객 분들은 유분 조절 효과, 메이크업 지속력, 그리고 휴대성이 좋다고 하셨어요!
+                        </p>
+                        <button>
+                            <a href="#">
+                                더보기
+                            </a>
+                        </button>
+                    </div>
+                </div>
+                <div class="pdtTxt fs14">
+                    <dl>
+                        <dt>뷰티포인트</dt>
+                        <dt>결제 금액의 1% 적립
+                            <img src="images/ico_tooltip.png" alt="">
+                        </dt>
+                    </dl>
+                    <dl>
+                        <dt>배송비</dt>
+                        <dt>2,500원(20,000원이상 구매시 무료배송)</dt>
+                    </dl>
+                </div>
+                <div class="pdtCount">
+                    <div class="pdt_inner">
+                        <span><img src="images/ico_dec.png" alt="수량 감소"></span>
+                        <span>1</span>
+                        <span><img src="images/ico_inc.png" alt="수량 증가"></span>
+                    </div>
+                    <p>9,000원</p>
+                </div>
+                <div class="pdtTotal fs20">
+                    <span class="fs14">합계</span>
+                    <h3>원</h3>
+                </div>
+                <div class="btnWrap">
+                    <button>
+                        <img src="images/ico_share_white.png" alt="공유하기">
+                    </button>
+                    <button>
+                        <img src="images/ico_heart32_white.png" alt="찜하기">
+                    </button>
+                    <button class="cartBtn">
+                        장바구니
+                    </button>
+                    <button class="buyBtn">
+                        바로구매
+                    </button>
+                </div>
+            </div>
+
+        </section>
+    </main>
 
 </body>
 
