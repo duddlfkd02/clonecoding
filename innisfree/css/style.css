@@ -240,7 +240,8 @@ section.category .sub_category .sub_category_list>li>.sub_category_inner>li:hove
 /* section. slide_content */
 section.pdt_content {
     display: flex;
-    padding-top: 60px;
+    padding: 60px 0 120px;
+    border-bottom: 1px solid var(--color_gray3);
 }
 
 /* swiper css */
@@ -287,6 +288,45 @@ section.pdt_content {
 
 .swiper-button-prev {
     transform: rotate(180deg);
+}
+
+/* pdt_benefit */
+
+section.pdt_content .pdt_benefit {
+    padding: 0 35px;
+}
+
+
+section.pdt_content .pdt_benefit .bene_inner {
+    margin-top: 15px;
+}
+
+section.pdt_content .pdt_benefit .bene_inner:last-child {
+    border-top: 1px solid var(--color_gray3);
+    padding-top: 15px;
+
+}
+
+section.pdt_content .pdt_benefit .bene_inner>p {
+    font-weight: 800;
+    padding-bottom: 5px;
+}
+
+section.pdt_content .pdt_benefit .bene_inner>span {
+    color: var(--color_darkGray);
+    margin-bottom: 5px;
+    display: block;
+    position: relative;
+}
+
+section.pdt_content .pdt_benefit .bene_inner>span::after {
+    content: '';
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    top: -2px;
+    position: absolute;
+    background: url('../images/arr_r16_gray.png') no-repeat;
 }
 
 /* *상품가격시작* */
@@ -444,4 +484,78 @@ section.pdt_content .pdt_content_wrap .btnWrap .buyBtn {
 
 section.pdt_content .pdt_content_wrap .btnWrap .buyBtn {
     background: var(--color-accent);
+}
+
+/* section.pdt_tag */
+section.pdt_tag {
+    padding: 60px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+section.pdt_tag .pdt_tag_inner>ul {
+    display: flex;
+    color: var(--color-accent2);
+    margin-top: 20px;
+    gap: 10px;
+}
+
+section.pdt_tag .pdt_tag_inner>ul>li {
+    height: 26px;
+    line-height: 26px;
+    border: 1px solid var(--color-accent2);
+    border-radius: 20px;
+    padding: 0 10px;
+    vertical-align: middle;
+}
+
+section.pdt_tag .vegan_mark {
+    background: var(--color_gray4);
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    position: relative;
+}
+
+section.pdt_tag .vegan_mark>img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+section.pdt_tag .vegan_mark>span {
+    font-size: 10px;
+    font-weight: 800;
+    position: absolute;
+    top: 66px;
+    left: 12px;
+}
+
+/* 상세정보 위 탭메뉴 */
+section.pdt_tabmenu .tabmenu_wrap {
+    border-bottom: 1px solid var(--color_gray3);
+}
+
+section.pdt_tabmenu .tabmenu_wrap .tabmenu_inner {
+    font-weight: 800;
+    color: var(--color_darkGray);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+section.pdt_tabmenu .tabmenu_wrap .tabmenu_inner>li {
+    width: calc(100% / 4);
+    text-align: center;
+    height: 60px;
+    line-height: 60px;
+}
+
+section.pdt_tabmenu .tabmenu_wrap .tabmenu_inner>li>a {
+    display: inline-block;
 }

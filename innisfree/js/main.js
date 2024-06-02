@@ -52,35 +52,6 @@ $(function () {
 })
 
 /* 구매 수량 증가 */
-/*
-let plus = document.querySelector('.plusBtn');
-let minus = document.querySelector('.minusBtn');
-let result = document.querySelector('.pdtcalc');
-let totalCost = document.querySelector('.pdtTot_Sum');
-let i = 1;
-
-plus.addEventListener('click', function () {
-    i++
-    result.value = i;
-    let totalPrice = i * 9000;
-    totalCost.textContent = totalPrice.toLocaleString();
-});
-
-minus.addEventListener('click', function () {
-    if (i > 0) {
-        i--
-        result.value = i;
-        let totalPrice = i * 9000;
-        totalCost.textContent = totalPrice.toLocaleString();
-    } else {
-        totalCost.textContent = 9000;
-    }
-
-});
-*/
-
-//onclick 버전
-
 function changeCount(type) {
     const result = document.getElementById('result');
 
