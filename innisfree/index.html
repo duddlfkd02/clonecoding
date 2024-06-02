@@ -245,11 +245,11 @@
                 </div>
                 <div class="pdtCount">
                     <div class="pdt_inner">
-                        <button class="minusBtn" id="minusBtn">
+                        <button onclick="changeCount('minus');" class="minusBtn" id="minusBtn">
                             <img src="images/ico_dec.png" alt="수량 감소">
                         </button>
                         <input type="text" value="1" class="pdtcalc" id="result">
-                        <button class="plusBtn" id="plusBtn">
+                        <button onclick="changeCount('plus');" class="plusBtn" id="plusBtn">
                             <img src="images/ico_inc.png" alt="수량 증가">
                         </button>
                     </div>
@@ -257,9 +257,9 @@
                 </div>
                 <div class="pdtTotal fs20">
                     <span class="fs14">합계</span>
-                    <span class="pdtTot_Sum">9,000</span>원
+                    <span class="pdtTot_Sum" id="pdtTot_Sum">9,000</span>원
                 </div>
-                <div class="btnWrap">
+                <div class=" btnWrap">
                     <button class="btn_ico">
                         <img src="images/ico_share_white.png" alt="공유하기">
                     </button>

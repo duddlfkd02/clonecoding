@@ -52,7 +52,7 @@ $(function () {
 })
 
 /* 구매 수량 증가 */
-
+/*
 let plus = document.querySelector('.plusBtn');
 let minus = document.querySelector('.minusBtn');
 let result = document.querySelector('.pdtcalc');
@@ -77,3 +77,27 @@ minus.addEventListener('click', function () {
     }
 
 });
+*/
+
+//onclick 버전
+
+function changeCount(type) {
+    const result = document.getElementById('result');
+
+    let number = result.value;
+
+    if (type === 'plus') {
+        number = parseInt(number) + 1;
+    } else if (type === 'minus') {
+        if (number > 0) {
+            number = parseInt(number) - 1;
+        } else {
+            number = 0;
+        }
+    }
+    result.value = number;
+
+    let totalPrice = number * 9000;
+    let totalCost = document.getElementById('pdtTot_Sum');
+    totalCost.textContent = totalPrice.toLocaleString();
+}
