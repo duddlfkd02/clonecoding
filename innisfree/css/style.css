@@ -15,6 +15,10 @@ button {
     margin: 0 auto;
 }
 
+/*강조 색상*/
+.txt_mint {
+    color: var(--color-sub1);
+}
 
 /* banner-top */
 .banner-top {
@@ -554,8 +558,114 @@ section.pdt_tabmenu .tabmenu_wrap .tabmenu_inner>li {
     text-align: center;
     height: 60px;
     line-height: 60px;
+    position: relative;
 }
 
 section.pdt_tabmenu .tabmenu_wrap .tabmenu_inner>li>a {
     display: inline-block;
+}
+
+/* prd_sec (tabcontent) */
+/* sec01 */
+.prd_sec {
+    padding: 60px 0;
+}
+
+.prd_sec .sec01 {
+    position: relative;
+}
+
+.prd_sec .sec01 .sec_text {
+    position: absolute;
+    top: 40%;
+    margin: 0 30px;
+    color: var(--color_darkBlack);
+}
+
+.prd_sec .sec_text .sub {
+    font-weight: 500;
+    line-height: 45px;
+}
+
+.prd_sec .sec01 .sec_text .subtitle>img {
+    width: 100%;
+    height: 100%;
+    margin: 20px 0 30px;
+}
+
+.prd_sec .sec01 .sec_text .subB {
+    font-weight: 700;
+}
+
+/* sec02 */
+
+.prd_sec .sec02 {
+    padding: 100px 0;
+    background: var(--color-sub2);
+    position: relative;
+    color: var(--color_darkBlack);
+}
+
+.prd_sec .sec02::before {
+    position: absolute;
+    top: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+    content: '';
+    display: block;
+    width: 100px;
+    height: 3px;
+    background: var(--color_darkBlack);
+}
+
+.prd_sec .sec02 .sec_text .subtitle {
+    font-weight: 800;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.prd_sec .sec02 .sec_text .sub {
+    margin: 30px 0;
+    text-align: center;
+}
+
+.prd_sec .sec02 .sec_text .sub>span {
+    display: inline-block;
+    font-weight: 700;
+}
+
+.prd_sec .sec02 .sec_review {
+    margin-top: 100px;
+    text-align: center;
+}
+
+.prd_sec .sec02 .sec_review .title2 {
+
+    font-weight: 700;
+    line-height: 55px;
+}
+
+.prd_sec .sec02 .sec_review .review_list>ul {
+    margin: 20px 80px 30px;
+}
+
+.prd_sec .sec02 .sec_review .review_list>ul>li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 105px;
+    position: relative;
+}
+
+.prd_sec .sec02 .sec_review .review_list>ul>li::after {
+    position: absolute;
+    content: '';
+    display: block;
+    width: 100%;
+    bottom: 0;
+    border-bottom: 1px dashed var(--color_darkBlack);
+}
+
+.prd_sec .sec02 .sec_review .review_list>ul>li .rv_num {
+    font-weight: 800;
 }

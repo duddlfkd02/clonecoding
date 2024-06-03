@@ -74,4 +74,14 @@
         font-size: 3.125rem;
     }
 
+
+    /* width */
+    .w780 {
+        width: 780px;
+        margin: 0 auto;
+    }
+
+    .w780>img {
+        width: 100%;
+    }
 }

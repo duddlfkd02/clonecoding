@@ -5,7 +5,7 @@
     font-weight: 300;
     font-display: swap;
     src: local('Pretendard Light'),
-        url(../fonts/Pretendard-Light.woff2) format('woff2');
+        url(../fonts/Pretendard-ExtraLight.woff2) format('woff2');
 }
 
 @font-face {

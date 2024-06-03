@@ -309,12 +309,89 @@
         <!-- 탭메뉴 -->
         <section class="pdt_tabmenu" id="contentWith">
             <div class="tabmenu_wrap">
-                <ul class="tabmenu_inner fs14">
-                    <li><a href="#">상세정보</a></li>
-                    <li><a href="#">리뷰 <span>999+</span></a></li>
-                    <li><a href="#">유의사항</a></li>
-                    <li><a href="#">문의</a></li>
+                <ul class="tabmenu_inner fs14" id="tabmenu_inner">
+                    <li onclick="tabOpen()" data-tab-target="#tab1"><a href="#">상세정보</a>
+                    </li>
+                    <li onclick="tabOpen()" data-tab-target="#tab2"><a href="#">리뷰 <span>999+</span></a>
+                    </li>
+                    <li onclick="tabOpen()" data-tab-target="#tab3"><a href="#">유의사항</a></li>
+                    <li onclick="tabOpen()" data-tab-target="#tab4"><a href="#">문의</a></li>
                 </ul>
+            </div>
+            <div class="tabmenu_contents">
+                <div class="tabCon_list">
+                    <div class="prd_sec">
+                        <!-- sec01 -->
+                        <div class="sec01 w780">
+                            <img src="images/img_sec01.png" alt="노세범 미네랄">
+                            <div class="sec_text">
+                                <p class="sub fs36">
+                                    유분과 과다 분비된 피지를<br>
+                                    깔끔하게 케어해주는 기름종이 파우더
+                                </p>
+                                <h2 class="subtitle">
+                                    <img src="images/img_nosebum_title.png" alt="노세범 제품명">
+                                </h2>
+                                <p class="subB fs30">노세범 미네랄 파우더</p>
+                            </div>
+                        </div>
+                        <!-- sec02 -->
+                        <div class="sec02 w780">
+                            <div class="sec_text">
+                                <h2 class="subtitle fs50">
+                                    과다 분비된 피지를 쏙쏙<br>
+                                    <span class="txt_mint">피지 케어 파우더</span>
+                                </h2>
+                                <p class="sub fs30">
+                                    번들번들한 유분과 과다 분비된 피지를 깔끔하게 케어하여
+                                    <span class="txt_mint">보송하게 정리된 피부를 연출</span>해 줍니다.
+                                </p>
+                            </div>
+                            <img src="images/img_sec02.png" alt="여성 얼굴" class="sec02_img">
+                            <div class="sec_review">
+                                <h3 class="title2 fs40">
+                                    파우더 사용 직후<br>
+                                    <span class="txt_mint">사용자 만족감 조사</span>
+                                </h3>
+                                <div class="review_list">
+                                    <ul>
+                                        <li>
+                                            <span class="txt fs24">
+                                                고운 입자감이 느껴진다.
+                                            </span>
+                                            <div class="rv_num txt_mint fs36">
+                                                <span class="rv_count fs50" id="rv_count1">100
+                                                </span>
+                                                %
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <span class="txt fs24">
+                                                가벼운 사용감이 느껴진다.
+                                            </span>
+                                            <div class="rv_num txt_mint fs36">
+                                                <span class="rv_count fs50" id="rv_count2">96
+                                                </span>
+                                                %
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <span class="txt fs24">과다 분비된 피지 흡착 효과가 있는 것 같다.</span>
+                                            <div class="rv_num txt_mint fs36">
+                                                <span class="rv_count fs50" id="rv_count3">93
+                                                </span>
+                                                %
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <p>*시험기관: 아모레퍼시픽(상하이) R&I 센터 / 2021.03.30~2021.04.02 / 21~36세 성인 여성 32명
+                                    </p>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
     </main>

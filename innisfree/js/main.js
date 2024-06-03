@@ -72,3 +72,68 @@ function changeCount(type) {
     let totalCost = document.getElementById('pdtTot_Sum');
     totalCost.textContent = totalPrice.toLocaleString();
 }
+
+// tabmenu
+
+/* sec02 review 숫자 자동 증가 */
+
+const counter = (counter, max) => {
+    let now = max;
+
+    const handle = setInterval(() => {
+        counter.innerHTML = Math.ceil(max - now);
+
+        // 목표수치에 도달하면 정지
+        if (now < 1) {
+            clearInterval(handle);
+        }
+
+        // 증가되는 값이 계속하여 작아짐
+        const step = now / 10;
+
+        // 값을 적용시키면서 다음 차례에 영향을 끼침
+        now -= step;
+    }, 50);
+}
+
+window.onload = () => {
+    // 카운트를 적용시킬 요소
+    const counter1 = document.getElementById("rv_count1");
+    const counter2 = document.getElementById("rv_count2");
+    const counter3 = document.getElementById("rv_count3");
+
+    // 목표 수치
+    const max1 = 100;
+    const max2 = 96;
+    const max3 = 93;
+
+    setTimeout(() => counter(counter1, max1), 2000);
+    setTimeout(() => counter(counter2, max2), 2000);
+    setTimeout(() => counter(counter3, max3), 2000);
+}
+
+// window.onload = function () {
+//     if (window.scrollY > 4000) {
+//         // 카운트를 적용시킬 요소
+//         const counter1 = document.getElementById("rv_count1");
+//         const counter2 = document.getElementById("rv_count2");
+//         const counter3 = document.getElementById("rv_count3");
+
+//         // 목표 수치
+//         const max1 = 100;
+//         const max2 = 96;
+//         const max3 = 93;
+
+//         setTimeout(() => counter(counter1, max1), 2000);
+//         setTimeout(() => counter(counter2, max2), 2000);
+//         setTimeout(() => counter(counter3, max3), 2000);
+//     }
+// }
+
+
+
+
+
+// window.addEventListener('scroll', function () {
+//     console.log(window.scrollY)
+// });
