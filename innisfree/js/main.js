@@ -31,7 +31,7 @@ $(function () {
     })
 })
 
-/* swiper js*/
+/* main swiper js*/
 $(function () {
     var swiper = new Swiper(".mySwiper", {
         spaceBetween: 10,
@@ -98,42 +98,50 @@ const counter = (counter, max) => {
 
 window.onload = () => {
     // 카운트를 적용시킬 요소
-    const counter1 = document.getElementById("rv_count1");
-    const counter2 = document.getElementById("rv_count2");
-    const counter3 = document.getElementById("rv_count3");
+    const counter1 = document.getElementById('rv_count1');
+    const counter2 = document.getElementById('rv_count2');
+    const counter3 = document.getElementById('rv_count3');
+    const counter4 = document.getElementById('rv_count4');
 
     // 목표 수치
     const max1 = 100;
     const max2 = 96;
     const max3 = 93;
+    const max4 = 81.2;
 
     setTimeout(() => counter(counter1, max1), 2000);
     setTimeout(() => counter(counter2, max2), 2000);
     setTimeout(() => counter(counter3, max3), 2000);
+    setTimeout(() => counter(counter4, max4), 2000);
 }
 
-// window.onload = function () {
-//     if (window.scrollY > 4000) {
-//         // 카운트를 적용시킬 요소
-//         const counter1 = document.getElementById("rv_count1");
-//         const counter2 = document.getElementById("rv_count2");
-//         const counter3 = document.getElementById("rv_count3");
 
-//         // 목표 수치
-//         const max1 = 100;
-//         const max2 = 96;
-//         const max3 = 93;
+// sec02 slide swiper
+$(function () {
+    var swiper = new Swiper(".review_slide01", {
+        slidesPerView: 2,
+        spaceBetween: 30,
+        slidesOffsetBefore: 100,
+        slidesOffsetAfter: 30,
+        autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+        },
 
-//         setTimeout(() => counter(counter1, max1), 2000);
-//         setTimeout(() => counter(counter2, max2), 2000);
-//         setTimeout(() => counter(counter3, max3), 2000);
-//     }
-// }
+    });
+})
 
+// sec03 slide swiper
+$(function () {
+    var swiper = new Swiper(".review_slide02", {
+        slidesPerView: 2,
+        spaceBetween: 30,
+        slidesOffsetBefore: 100,
+        slidesOffsetAfter: 30,
+        autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+        },
 
-
-
-
-// window.addEventListener('scroll', function () {
-//     console.log(window.scrollY)
-// });
+    });
+})
