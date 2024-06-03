@@ -249,34 +249,32 @@ section.pdt_content {
 }
 
 /* swiper css */
+/* main slide */
 .swiper_container {
     width: 40%;
 }
 
 .pdtslide.mySwiper2 {
     display: flex;
-    height: 80%;
     width: 100%;
     overflow: hidden;
 }
 
-.pdtslideThumb.mySwiper {
-    height: 20%;
-    margin: 25px;
+.pdtslide.mySwiper2 .pdtslide_list .pdtslide_inner>img {
+    width: 500px;
 }
 
-.swiper.pdtslide {
-    width: 100%;
-    height: auto;
+/* slide Thumb */
+.pdtslideThumb {
+    margin: 25px 0;
+    cursor: pointer;
 }
 
-.swiper-slide>img {
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+.pdtslideThumb .thumbList .thumbList_inner>img {
+    width: 82px;
+    height: 109px;
+    margin-left: 30px;
 }
-
 
 /* 슬라이드 버튼 */
 .swiper-button-next::after,
@@ -288,6 +286,12 @@ section.pdt_content {
     position: absolute;
     top: 50%;
     width: 100%;
+    display: none;
+}
+
+.pdtslideThumb:hover .swiper_control {
+    display: block;
+
 }
 
 .swiper-button-prev {
@@ -737,7 +741,7 @@ section.pdt_tabmenu .tabmenu_wrap .tabmenu_inner>li>a {
 
 /* sec03 */
 .prd_sec .sec03 {
-    padding: 100px 0;
+    padding-top: 100px;
     background: var(--color-sub2);
     position: relative;
     color: var(--color_darkBlack);
@@ -755,6 +759,10 @@ section.pdt_tabmenu .tabmenu_wrap .tabmenu_inner>li>a {
     height: 100%;
     color: var(--color_darkBlack);
     text-align: center;
+}
+
+.swiper.review_slide02 .review_slide_wrapper {
+    margin-bottom: 160px;
 }
 
 .swiper-slide.review_slide {
@@ -785,7 +793,7 @@ section.pdt_tabmenu .tabmenu_wrap .tabmenu_inner>li>a {
 
 /* sec 04 */
 .prd_sec .sec04 {
-    padding: 100px 0;
+    padding-top: 100px;
     background: var(--color-sub2);
     position: relative;
     color: var(--color_darkBlack);
@@ -798,8 +806,25 @@ section.pdt_tabmenu .tabmenu_wrap .tabmenu_inner>li>a {
 
 .prd_sec .sec04 .sec04_texture>img {
     width: 100%;
+    margin-top: 30px;
 }
 
 .prd_sec .sec04>p {
     padding: 30px 40px;
+}
+
+/* sec 05 */
+.prd_sec .sec05 {
+    background: var(--color-sub2);
+    color: var(--color_darkBlack);
+}
+
+.prd_sec .sec05 .prdsubtit {
+    font-weight: 700;
+    line-height: 65px;
+    padding: 90px 40px 16px;
+}
+
+.prd_sec .sec05 .sec05_drc .sec05_prdImg>img {
+    width: 100%;
 }

@@ -17,6 +17,7 @@ $(document).ready(function () {
 
     setInterval(schRolling, 1500) //1500ms마다 자동롤링
 });
+
 /*서브카테고리 슬라이드*/
 $(function () {
     let cateMain = $('.sub_category_list > li');
@@ -33,13 +34,13 @@ $(function () {
 
 /* main swiper js*/
 $(function () {
-    var swiper = new Swiper(".mySwiper", {
-        spaceBetween: 10,
-        slidesPerView: 4,
+    var swiper = new Swiper(".pdtslideThumb", {
+        spaceBetween: 5,
+        slidesPerView: 5,
         freeMode: true,
         watchSlidesProgress: true,
     });
-    var swiper2 = new Swiper(".mySwiper2", {
+    var swiper2 = new Swiper(".pdtslide", {
         spaceBetween: 10,
         navigation: {
             nextEl: ".swiper-button-next",
