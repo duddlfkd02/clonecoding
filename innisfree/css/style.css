@@ -587,7 +587,7 @@ section.pdt_tabmenu .tabmenu_wrap .tabmenu_inner>li>a {
     line-height: 45px;
 }
 
-.prd_sec .sec01 .sec_text .subtitle>img {
+.prd_sec .sec01 .sec_text .titimg>img {
     width: 100%;
     height: 100%;
     margin: 20px 0 30px;
@@ -598,7 +598,6 @@ section.pdt_tabmenu .tabmenu_wrap .tabmenu_inner>li>a {
 }
 
 /* sec02 */
-
 .prd_sec .sec02 {
     padding: 100px 0;
     background: var(--color-sub2);
@@ -618,8 +617,12 @@ section.pdt_tabmenu .tabmenu_wrap .tabmenu_inner>li>a {
     background: var(--color_darkBlack);
 }
 
+.prd_sec .sec_text .subtitle:first-child ::before {
+    display: none;
+}
+
 .prd_sec .sec02 .sec_text .subtitle {
-    font-weight: 800;
+    font-weight: 700;
     text-align: center;
     padding-top: 100px;
     position: relative;
@@ -683,7 +686,7 @@ section.pdt_tabmenu .tabmenu_wrap .tabmenu_inner>li>a {
     border-top: 1px dashed var(--color_darkBlack);
 }
 
-/* sec02 첫번째 swiper slide*/
+/* sec02 swiper slide*/
 .swiper.review_slide01 {
     width: 100%;
     height: 100%;
@@ -733,7 +736,6 @@ section.pdt_tabmenu .tabmenu_wrap .tabmenu_inner>li>a {
 }
 
 /* sec03 */
-
 .prd_sec .sec03 {
     padding: 100px 0;
     background: var(--color-sub2);
@@ -742,12 +744,12 @@ section.pdt_tabmenu .tabmenu_wrap .tabmenu_inner>li>a {
 }
 
 .prd_sec .sec03 .sec_text .subtitle {
-    font-weight: 800;
+    font-weight: 700;
     text-align: center;
 }
 
 
-/* sec03  swiper slide*/
+/* sec03 swiper slide*/
 .swiper.review_slide02 {
     width: 100%;
     height: 100%;
@@ -779,4 +781,25 @@ section.pdt_tabmenu .tabmenu_wrap .tabmenu_inner>li>a {
     position: absolute;
     bottom: 0;
     background: #5Ac6c6;
+}
+
+/* sec 04 */
+.prd_sec .sec04 {
+    padding: 100px 0;
+    background: var(--color-sub2);
+    position: relative;
+    color: var(--color_darkBlack);
+}
+
+.prd_sec .sec04 .sec_text .subtitle {
+    font-weight: 700;
+    text-align: center;
+}
+
+.prd_sec .sec04 .sec04_texture>img {
+    width: 100%;
+}
+
+.prd_sec .sec04>p {
+    padding: 30px 40px;
 }
