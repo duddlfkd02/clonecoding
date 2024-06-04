@@ -555,6 +555,7 @@ section.pdt_tabmenu .tabmenu_wrap .tabmenu_inner {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    cursor: pointer;
 }
 
 section.pdt_tabmenu .tabmenu_wrap .tabmenu_inner>li {
@@ -895,3 +896,57 @@ section.pdt_tabmenu .tabmenu_wrap .tabmenu_inner>li>a {
 }
 
 /* * 상세페이지 End * */
+
+/* review */
+
+section.review_wrap {
+    max-width: 1280px;
+    margin: 60px auto;
+    border: 1px solid var(--color_gray3);
+}
+
+section.review_wrap .review_gpt {
+    padding: 34px 40px;
+    display: flex;
+}
+
+section.review_wrap .review_gpt .review_summary {
+    border-right: 1px solid var(--color_gray3);
+    width: 40%;
+    padding-right: 40px;
+    height: 70px;
+}
+
+section.review_wrap .review_gpt .review_summary .review_star {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+section.review_wrap .review_gpt .review_summary .review_star>img {
+    width: 140px;
+    height: 32px;
+}
+
+section.review_wrap .review_gpt .gptComment {
+    margin-left: 40px;
+    font-weight: 700;
+    line-height: 25px;
+    word-break: keep-all;
+    color: var(--color_darkBlack);
+}
+
+section.review_wrap .review_gpt .gptComment .gptTxt_small {
+    color: #999999;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+}
+
+section.review_wrap .review_gpt .gptComment .gptTxt_small>img {
+    display: inline-block;
+    margin-right: 3px;
+    margin-top: -3px;
+}

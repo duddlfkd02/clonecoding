@@ -17,8 +17,8 @@
     <link rel="stylesheet" href="css/style.css">
     <!-- JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="js/swiper.js"></script>
     <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/swiper.js"></script>
 </head>
 
 <body>
@@ -310,74 +310,92 @@
         <section class="pdt_tabmenu" id="contentWith">
             <div class="tabmenu_wrap">
                 <ul class="tabmenu_inner fs14" id="tabmenu_inner">
-                    <li onclick="tabOpen()" data-tab-target="#tab1"><a href="#">상세정보</a>
+                    <li onclick="secMove('1')" data-tab-target="#tab1">상세정보
                     </li>
-                    <li onclick="tabOpen()" data-tab-target="#tab2"><a href="#">리뷰 <span>999+</span></a>
+                    <li onclick="secMove('2')" data-tab-target="#tab2"><a href="#">리뷰 <span>999+</span></a>
                     </li>
-                    <li onclick="tabOpen()" data-tab-target="#tab3"><a href="#">유의사항</a></li>
-                    <li onclick="tabOpen()" data-tab-target="#tab4"><a href="#">문의</a></li>
+                    <li onclick="secMove('3')" data-tab-target="#tab3"><a href="#">유의사항</a></li>
+                    <li onclick="secMove('4')" data-tab-target="#tab4">문의</li>
                 </ul>
             </div>
-            <div class="tabmenu_contents">
-                <div class="tabCon_list">
-                    <div class="prd_sec">
-                        <!-- sec01 -->
-                        <section class="sec01 w780">
-                            <img src="images/img_sec01.png" alt="노세범 미네랄">
-                            <div class="sec_text">
-                                <p class="sub fs36">
-                                    유분과 과다 분비된 피지를<br>
-                                    깔끔하게 케어해주는 기름종이 파우더
+        </section>
+        <div class="tabmenu_contents">
+            <div class="tabCon_list">
+                <div class="prd_sec" id="prd_1">
+                    <!-- sec01 -->
+                    <section class="sec01 w780">
+                        <img src="images/img_sec01.png" alt="노세범 미네랄">
+                        <div class="sec_text">
+                            <p class="sub fs36">
+                                유분과 과다 분비된 피지를<br>
+                                깔끔하게 케어해주는 기름종이 파우더
+                            </p>
+                            <h2 class="titimg">
+                                <img src="images/img_nosebum_title.png" alt="노세범 제품명">
+                            </h2>
+                            <p class="subB fs30">노세범 미네랄 파우더</p>
+                        </div>
+                    </section>
+                    <!-- sec02 -->
+                    <section class="sec02 w780">
+                        <div class="sec_text">
+                            <h2 class="subtitle fs50">
+                                과다 분비된 피지를 쏙쏙<br>
+                                <span class="txt_mint">피지 케어 파우더</span>
+                            </h2>
+                            <p class="sub fs30">
+                                번들번들한 유분과 과다 분비된 피지를 깔끔하게 케어하여
+                                <span class="txt_mint">보송하게 정리된 피부를 연출</span>해 줍니다.
+                            </p>
+                        </div>
+                        <img src="images/img_sec02.png" alt="여성 얼굴" class="sec02_img">
+                        <div class="sec_review">
+                            <h3 class="title2 fs40">
+                                파우더 사용 직후<br>
+                                <span class="txt_mint">사용자 만족감 조사</span>
+                            </h3>
+                            <div class="review_list">
+                                <div class="review_inner">
+                                    <span class="txt fs24">
+                                        고운 입자감이 느껴진다.
+                                    </span>
+                                    <div class="rv_num txt_mint fs36">
+                                        <span class="rv_count fs50" id="rv_count1">100
+                                        </span>
+                                        %
+                                    </div>
+                                </div>
+                                <div class="review_inner">
+                                    <span class="txt fs24">
+                                        가벼운 사용감이 느껴진다.
+                                    </span>
+                                    <div class="rv_num txt_mint fs36">
+                                        <span class="rv_count fs50" id="rv_count2">96
+                                        </span>
+                                        %
+                                    </div>
+                                </div>
+                                <div class="review_inner">
+                                    <span class="txt fs24">과다 분비된 피지 흡착 효과가 있는 것 같다.</span>
+                                    <div class="rv_num txt_mint fs36">
+                                        <span class="rv_count fs50" id="rv_count3">93
+                                        </span>
+                                        %
+                                    </div>
+                                </div>
+                                <p>*시험기관: 아모레퍼시픽(상하이) R&I 센터 / 2021.03.30~2021.04.02 / 21~36세 성인 여성 32명
                                 </p>
-                                <h2 class="titimg">
-                                    <img src="images/img_nosebum_title.png" alt="노세범 제품명">
-                                </h2>
-                                <p class="subB fs30">노세범 미네랄 파우더</p>
                             </div>
-                        </section>
-                        <!-- sec02 -->
-                        <section class="sec02 w780">
                             <div class="sec_text">
                                 <h2 class="subtitle fs50">
-                                    과다 분비된 피지를 쏙쏙<br>
-                                    <span class="txt_mint">피지 케어 파우더</span>
+                                    깔끔하게 지속되는<br>
+                                    <span class="txt_mint">메이크업 파워 고정</span>
                                 </h2>
-                                <p class="sub fs30">
-                                    번들번들한 유분과 과다 분비된 피지를 깔끔하게 케어하여
-                                    <span class="txt_mint">보송하게 정리된 피부를 연출</span>해 줍니다.
-                                </p>
-                            </div>
-                            <img src="images/img_sec02.png" alt="여성 얼굴" class="sec02_img">
-                            <div class="sec_review">
-                                <h3 class="title2 fs40">
-                                    파우더 사용 직후<br>
-                                    <span class="txt_mint">사용자 만족감 조사</span>
-                                </h3>
                                 <div class="review_list">
                                     <div class="review_inner">
-                                        <span class="txt fs24">
-                                            고운 입자감이 느껴진다.
-                                        </span>
+                                        <span class="txt fs24">사용 12시간 후, 메이크업이 지속되는 느낌이다.</span>
                                         <div class="rv_num txt_mint fs36">
-                                            <span class="rv_count fs50" id="rv_count1">100
-                                            </span>
-                                            %
-                                        </div>
-                                    </div>
-                                    <div class="review_inner">
-                                        <span class="txt fs24">
-                                            가벼운 사용감이 느껴진다.
-                                        </span>
-                                        <div class="rv_num txt_mint fs36">
-                                            <span class="rv_count fs50" id="rv_count2">96
-                                            </span>
-                                            %
-                                        </div>
-                                    </div>
-                                    <div class="review_inner">
-                                        <span class="txt fs24">과다 분비된 피지 흡착 효과가 있는 것 같다.</span>
-                                        <div class="rv_num txt_mint fs36">
-                                            <span class="rv_count fs50" id="rv_count3">93
+                                            <span class="rv_count fs50" id="rv_count4">81
                                             </span>
                                             %
                                         </div>
@@ -385,142 +403,152 @@
                                     <p>*시험기관: 아모레퍼시픽(상하이) R&I 센터 / 2021.03.30~2021.04.02 / 21~36세 성인 여성 32명
                                     </p>
                                 </div>
-                                <div class="sec_text">
-                                    <h2 class="subtitle fs50">
-                                        깔끔하게 지속되는<br>
-                                        <span class="txt_mint">메이크업 파워 고정</span>
-                                    </h2>
-                                    <div class="review_list">
-                                        <div class="review_inner">
-                                            <span class="txt fs24">사용 12시간 후, 메이크업이 지속되는 느낌이다.</span>
-                                            <div class="rv_num txt_mint fs36">
-                                                <span class="rv_count fs50" id="rv_count4">81
-                                                </span>
-                                                %
-                                            </div>
-                                        </div>
-                                        <p>*시험기관: 아모레퍼시픽(상하이) R&I 센터 / 2021.03.30~2021.04.02 / 21~36세 성인 여성 32명
-                                        </p>
-                                    </div>
-                                </div>
                             </div>
-                            <!-- sec02 Swiper -->
-                            <div class="swiper mySwiper review_slide01">
-                                <div class="swiper-wrapper review_slide_wrapper">
-                                    <div class="swiper-slide review_slide rvSlide01">
-                                        <img src="images/img_sec02_slide1.png" alt="">
-                                        <span class="txt fs20">바르기 전</span>
-                                    </div>
-                                    <div class="swiper-slide review_slide rvSlide02">
-                                        <img src="images/img_sec02_slide2.png" alt="">
-                                        <span class="txt fs20">바른직후</span>
-                                    </div>
-                                    <div class="swiper-slide review_slide rvSlide03">
-                                        <img src="images/img_sec02_slide3.png" alt="">
-                                        <span class="txt fs20">12시간 후</span>
-                                    </div>
-                                </div>
-                                <p>*제품의 이해를 돕기 위하여 연출한 이미지입니다. 개인 차가 있을 수 있습니다.</p>
-                            </div>
-                        </section>
-                        <!-- sec03 -->
-                        <section class="sec03 w780">
-                            <div class="sec_text">
-                                <h2 class="subtitle fs50">
-                                    다양하게 활용 가능한<br>
-                                    <span class="txt_mint">멀티 유즈 파우더</span>
-                                </h2>
-                            </div>
-                            <!-- sec03 Swiper -->
-                            <div class="swiper mySwiper review_slide02">
-                                <div class="swiper-wrapper review_slide_wrapper">
-                                    <div class="swiper-slide review_slide rvSlide04">
-                                        <img src="images/img_sec02_slide4.png" alt="">
-                                        <span class="txt fs20">헤어파우더</span>
-                                    </div>
-                                    <div class="swiper-slide review_slide rvSlide05">
-                                        <img src="images/img_sec02_slide5.png" alt="">
-                                        <span class="txt fs20">아이 프라이머</span>
-                                    </div>
-                                    <div class="swiper-slide review_slide rvSlide06">
-                                        <img src="images/img_sec02_slide6.png" alt="">
-                                        <span class="txt fs20">스킨케어 픽서</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </section>
-                        <!-- sec04 -->
-                        <section class="sec04 w780">
-                            <div class="sec_text">
-                                <h2 class="subtitle fs50">
-                                    피부가 편안한<br>
-                                    <span class="txt_mint">데일리 파우더</span>
-                                </h2>
-                            </div>
-                            <div class="sec04_texture">
-                                <img src="images/img_sec04.png" alt="노세범 텍스쳐">
-                            </div>
-                            <p>*13-무첨가: 동물성원료, 광물성오일, 파라벤, 탤크, 폴리아크릴아마이드, 합성색소, 향, 이미다졸리디닐우레아, 트라이에탄올아민, 피이지, 트리클로산,
-                                글루텐, 과불화화합물</p>
-                        </section>
-                        <!-- sec05 -->
-                        <section class="sec05 w780">
-                            <h3 class="prdsubtit txt_mint fs50">
-                                나에게 딱 맞는<br>
-                                #인생노세범을 찾아보세요!
-                            </h3>
-                            <div class="sec05_drc">
-                                <div class="sec05_prdImg">
-                                    <img src="images/img_sec05.png" alt="노세범 시리즈">
-                                </div>
-                                <div class="sec05_btns">
-                                    <div class="sec05_bt1">
-                                        <span class="hide">노세범 미네랄 팩트</span>
-                                        <a href="#"></a>
-                                    </div>
-                                    <div class="sec05_bt2">
-                                        <span class="hide">노세범 파우더 쿠션</span>
-                                        <a href="#"></a>
-                                    </div>
-                                    <div class="sec05_bt3">
-                                        <span class="hide">노세범 AC 파우더</span>
-                                        <a href="#"></a>
-                                    </div>
-                                    <div class="sec05_bt4">
-                                        <span class="hide">노세범 블러 프라이머</span>
-                                        <a href="#"></a>
-                                    </div>
-                                    <div class="sec05_bt5">
-                                        <span class="hide">노세범 미네랄 파우더</span>
-                                        <a href="#"></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </section>
-                        <section class="sec06 w780">
-                            <h2 class="title sec06_img">
-                                <img src="images/img_sec06_title.png" alt="Better For Us and Earth">
-                            </h2>
-                            <div class="prdsubtit fs50">
-                                재생 플라스틱 용기
-                            </div>
-                            <p class="sub_description fs30">버려진 플라스틱을 재가공하여 만든 재생 원료를
-                                용기에 적용하였습니다.</p>
-                            <div class="sec06_img">
-                                <img src="images/img_sec06_2.png" alt="노세범 제품 이미지">
-                            </div>
-                            <div class="prdsubtit fs50">
-                                비건인증
-                            </div>
-                            <p class="sub_description fs30">동물 유래 원재료를 제조, 가공 과정에서 사용하지 않은
-                                한국 비건 인증원의 비건 인증을 받은 제품 입니다.</p>
-                        </section>
-                        <div class="logo_mint w780">
-                            <img src="images/img_deslogo.png" alt="이니스프리">
                         </div>
+                        <!-- sec02 Swiper -->
+                        <div class="swiper mySwiper review_slide01">
+                            <div class="swiper-wrapper review_slide_wrapper">
+                                <div class="swiper-slide review_slide rvSlide01">
+                                    <img src="images/img_sec02_slide1.png" alt="">
+                                    <span class="txt fs20">바르기 전</span>
+                                </div>
+                                <div class="swiper-slide review_slide rvSlide02">
+                                    <img src="images/img_sec02_slide2.png" alt="">
+                                    <span class="txt fs20">바른직후</span>
+                                </div>
+                                <div class="swiper-slide review_slide rvSlide03">
+                                    <img src="images/img_sec02_slide3.png" alt="">
+                                    <span class="txt fs20">12시간 후</span>
+                                </div>
+                            </div>
+                            <p>*제품의 이해를 돕기 위하여 연출한 이미지입니다. 개인 차가 있을 수 있습니다.</p>
+                        </div>
+                    </section>
+                    <!-- sec03 -->
+                    <section class="sec03 w780">
+                        <div class="sec_text">
+                            <h2 class="subtitle fs50">
+                                다양하게 활용 가능한<br>
+                                <span class="txt_mint">멀티 유즈 파우더</span>
+                            </h2>
+                        </div>
+                        <!-- sec03 Swiper -->
+                        <div class="swiper mySwiper review_slide02">
+                            <div class="swiper-wrapper review_slide_wrapper">
+                                <div class="swiper-slide review_slide rvSlide04">
+                                    <img src="images/img_sec02_slide4.png" alt="">
+                                    <span class="txt fs20">헤어파우더</span>
+                                </div>
+                                <div class="swiper-slide review_slide rvSlide05">
+                                    <img src="images/img_sec02_slide5.png" alt="">
+                                    <span class="txt fs20">아이 프라이머</span>
+                                </div>
+                                <div class="swiper-slide review_slide rvSlide06">
+                                    <img src="images/img_sec02_slide6.png" alt="">
+                                    <span class="txt fs20">스킨케어 픽서</span>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- sec04 -->
+                    <section class="sec04 w780">
+                        <div class="sec_text">
+                            <h2 class="subtitle fs50">
+                                피부가 편안한<br>
+                                <span class="txt_mint">데일리 파우더</span>
+                            </h2>
+                        </div>
+                        <div class="sec04_texture">
+                            <img src="images/img_sec04.png" alt="노세범 텍스쳐">
+                        </div>
+                        <p>*13-무첨가: 동물성원료, 광물성오일, 파라벤, 탤크, 폴리아크릴아마이드, 합성색소, 향, 이미다졸리디닐우레아, 트라이에탄올아민, 피이지, 트리클로산,
+                            글루텐, 과불화화합물</p>
+                    </section>
+                    <!-- sec05 -->
+                    <section class="sec05 w780">
+                        <h3 class="prdsubtit txt_mint fs50">
+                            나에게 딱 맞는<br>
+                            #인생노세범을 찾아보세요!
+                        </h3>
+                        <div class="sec05_drc">
+                            <div class="sec05_prdImg">
+                                <img src="images/img_sec05.png" alt="노세범 시리즈">
+                            </div>
+                            <div class="sec05_btns">
+                                <div class="sec05_bt1">
+                                    <span class="hide">노세범 미네랄 팩트</span>
+                                    <a href="#"></a>
+                                </div>
+                                <div class="sec05_bt2">
+                                    <span class="hide">노세범 파우더 쿠션</span>
+                                    <a href="#"></a>
+                                </div>
+                                <div class="sec05_bt3">
+                                    <span class="hide">노세범 AC 파우더</span>
+                                    <a href="#"></a>
+                                </div>
+                                <div class="sec05_bt4">
+                                    <span class="hide">노세범 블러 프라이머</span>
+                                    <a href="#"></a>
+                                </div>
+                                <div class="sec05_bt5">
+                                    <span class="hide">노세범 미네랄 파우더</span>
+                                    <a href="#"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="sec06 w780">
+                        <h2 class="title sec06_img">
+                            <img src="images/img_sec06_title.png" alt="Better For Us and Earth">
+                        </h2>
+                        <div class="prdsubtit fs50">
+                            재생 플라스틱 용기
+                        </div>
+                        <p class="sub_description fs30">버려진 플라스틱을 재가공하여 만든 재생 원료를
+                            용기에 적용하였습니다.</p>
+                        <div class="sec06_img">
+                            <img src="images/img_sec06_2.png" alt="노세범 제품 이미지">
+                        </div>
+                        <div class="prdsubtit fs50">
+                            비건인증
+                        </div>
+                        <p class="sub_description fs30">동물 유래 원재료를 제조, 가공 과정에서 사용하지 않은
+                            한국 비건 인증원의 비건 인증을 받은 제품 입니다.</p>
+                    </section>
+                    <div class="logo_mint w780">
+                        <img src="images/img_deslogo.png" alt="이니스프리">
                     </div>
                 </div>
-        </section>
+                <!-- 리뷰 -->
+                <section class="review_wrap">
+                    <div class="review_gpt">
+                        <div class="review_summary">
+                            <div class="review_star fs24">
+                                <img src="images/stars_grade32.png" alt="별점">
+                                <span>4.8</span>
+                            </div>
+                            <p class="fs20">😍 최고! 평생쓸래요</p>
+                        </div>
+                        <div class="gptComment">
+                            <p class="gptTxt">
+                                이니스프리 노세범 파우더는 사용자들 사이에서 유분 조절과 메이크업 지속력을 높여주는 데 탁월한 효과를 보여주며, 특히 지성 피부나 앞머리 관리에 유용합니다.
+                                깔끔하고
+                                귀여운 패키지 디자인과 합리적인 가격으로 다양한 연령층의 사랑을 받고 있으며, 작고 가벼운 사이즈로 휴대하기 편리해 외출 시에도 간편하게 사용할 수 있습니다.
+                                소수의
+                                리뷰에서는 퍼프 크기나 가루 분배에 대한 아쉬움을 표현했지만, 전반적으로 고객 만족도가 매우 높은 제품입니다.
+                            </p>
+                            <p class="fs12 gptTxt_small">
+                                <img src="images/ico_i.png" alt="주의">
+                                Chat GPT로 최근 리뷰들을 요약했어요. 기술 수준으로 요약이
+                                정확하지 않거나 표현이 어색할 수 있습니다.
+                            </p>
+                        </div>
+                    </div>
+
+                </section>
+            </div>
+
     </main>
 
 

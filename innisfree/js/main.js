@@ -1,21 +1,21 @@
 /*검색창 롤링*/
 $(document).ready(function () {
-    let height = $('.scroll_text').height(); // 스크롤 li 전체 높이 변수에 저장
-    let listNum = $('.scrollRoll > li').length; //li 개수 저장
-    let maxHeight = height * listNum; // 롤링 되어야하는 리스트 전체 높이
+    let height = $('.scroll_text').height();
+    let listNum = $('.scrollRoll > li').length;
+    let maxHeight = height * listNum;
     let move = 0;
 
     function schRolling() {
-        move = move + height; //move의 높이값
-        $('.scrollRoll').animate({ 'top': -move }, 600, function () { //높이값 만큼 부드럽게 올려주고
-            if (move >= maxHeight) { //만약에 전체 높이가 move 값과 같거나 move가 더 크면
-                $(this).css('top', 0); //top값을 0으로 만들고
-                move = 0; //move값도 초기화!
+        move = move + height;
+        $('.scrollRoll').animate({ 'top': -move }, 600, function () {
+            if (move >= maxHeight) {
+                $(this).css('top', 0);
+                move = 0;
             };
         });
     };
 
-    setInterval(schRolling, 1500) //1500ms마다 자동롤링
+    setInterval(schRolling, 1500);
 });
 
 /*서브카테고리 슬라이드*/
@@ -32,25 +32,6 @@ $(function () {
     })
 })
 
-/* main swiper js*/
-$(function () {
-    var swiper = new Swiper(".pdtslideThumb", {
-        spaceBetween: 5,
-        slidesPerView: 5,
-        freeMode: true,
-        watchSlidesProgress: true,
-    });
-    var swiper2 = new Swiper(".pdtslide", {
-        spaceBetween: 10,
-        navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
-        },
-        thumbs: {
-            swiper: swiper,
-        },
-    });
-})
 
 /* 구매 수량 증가 */
 function changeCount(type) {
@@ -74,10 +55,16 @@ function changeCount(type) {
     totalCost.textContent = totalPrice.toLocaleString();
 }
 
-// tabmenu
+function secMove(sec) {
+    let offset = $('#prd' + sec).offset();
+    $('html, body').animate({ scrollTop: offset.top });
+}
+
+$(function () {
+    secMove(sec);
+})
 
 /* sec02 review 숫자 자동 증가 */
-
 const counter = (counter, max) => {
     let now = max;
 
@@ -117,32 +104,3 @@ window.onload = () => {
 }
 
 
-// sec02 slide swiper
-$(function () {
-    var swiper = new Swiper(".review_slide01", {
-        slidesPerView: 2,
-        spaceBetween: 30,
-        slidesOffsetBefore: 100,
-        slidesOffsetAfter: 30,
-        autoplay: {
-            delay: 2500,
-            disableOnInteraction: false,
-        },
-
-    });
-})
-
-// sec03 slide swiper
-$(function () {
-    var swiper = new Swiper(".review_slide02", {
-        slidesPerView: 2,
-        spaceBetween: 30,
-        slidesOffsetBefore: 100,
-        slidesOffsetAfter: 30,
-        autoplay: {
-            delay: 2500,
-            disableOnInteraction: false,
-        },
-
-    });
-})
