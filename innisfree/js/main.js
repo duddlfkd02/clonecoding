@@ -55,14 +55,29 @@ function changeCount(type) {
     totalCost.textContent = totalPrice.toLocaleString();
 }
 
+/* 탭 이동 pdt_tabmenu */
+$(function () {
+    $('ul.tabmenu_inner li').click(function () {
+        let activeTab = $(this).attr('data-tab');
+        $('ul.tabmenu_inner li').removeClass('active');
+        $('.tabcon').removeClass('active');
+
+        $(this).addClass('active');
+        $('#' + activeTab).addClass('active');
+    })
+
+});
+
+// 리뷰 탭 클릭시 이동 구현중
 function secMove(sec) {
-    let offset = $('#prd' + sec).offset();
-    $('html, body').animate({ scrollTop: offset.top });
+    let offset = $('#tab' + sec).offset();
+    $('html, body').animate({ scrollTop: offset.top }, 300);
 }
 
 $(function () {
     secMove(sec);
 })
+
 
 /* sec02 review 숫자 자동 증가 */
 const counter = (counter, max) => {
