@@ -823,13 +823,53 @@ section.pdt_tabmenu .tabmenu_wrap .tabmenu_inner>li>a {
     font-weight: 700;
     line-height: 65px;
     padding: 90px 40px 16px;
+    position: relative;
+}
+
+.prd_sec .sec05 .sec05_drc {
+    position: relative;
 }
 
 .prd_sec .sec05 .sec05_drc .sec05_prdImg>img {
     width: 100%;
 }
 
-/* 이미지 위 버튼 추가 예정 */
+.prd_sec .sec05 .sec05_drc .sec05_btns .hide {
+    display: none;
+}
+
+.prd_sec .sec05 .sec05_drc .sec05_btns a {
+    position: absolute;
+    width: 100px;
+    height: 20px;
+    display: block;
+}
+
+.prd_sec .sec05 .sec05_drc .sec05_btns .sec05_bt1>a {
+    top: 11%;
+    right: 5%;
+}
+
+.prd_sec .sec05 .sec05_drc .sec05_btns .sec05_bt2>a {
+    top: 28%;
+    right: 5%;
+}
+
+.prd_sec .sec05 .sec05_drc .sec05_btns .sec05_bt3>a {
+    top: 34%;
+    left: 5%;
+}
+
+.prd_sec .sec05 .sec05_drc .sec05_btns .sec05_bt4>a {
+    top: 77%;
+    left: 5%;
+}
+
+.prd_sec .sec05 .sec05_drc .sec05_btns .sec05_bt5>a {
+    top: 87%;
+    right: 36%;
+}
+
 /* sec 06 */
 .prd_sec .sec06 {
     background: var(--color-sub2);
@@ -853,3 +893,5 @@ section.pdt_tabmenu .tabmenu_wrap .tabmenu_inner>li>a {
 .prd_sec .sec06 .sub_description:nth-child(6) {
     padding-bottom: 50px;
 }
+
+/* * 상세페이지 End * */
