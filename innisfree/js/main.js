@@ -73,7 +73,6 @@ function secMove(sec) {
     let offset = $('#tab' + sec).offset();
     $('html, body').animate({ scrollTop: offset.top }, 300);
 }
-
 $(function () {
     secMove(sec);
 })
