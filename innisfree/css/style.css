@@ -828,3 +828,28 @@ section.pdt_tabmenu .tabmenu_wrap .tabmenu_inner>li>a {
 .prd_sec .sec05 .sec05_drc .sec05_prdImg>img {
     width: 100%;
 }
+
+/* 이미지 위 버튼 추가 예정 */
+/* sec 06 */
+.prd_sec .sec06 {
+    background: var(--color-sub2);
+    color: var(--color_darkBlack);
+    padding: 100px 40px 0px;
+}
+
+.prd_sec .sec06 .sec06_img>img {
+    width: 100%;
+}
+
+.prd_sec .sec06 .prdsubtit {
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.prd_sec .sec06 .sec06_img {
+    margin: 60px 0;
+}
+
+.prd_sec .sec06 .sub_description:nth-child(6) {
+    padding-bottom: 50px;
+}
