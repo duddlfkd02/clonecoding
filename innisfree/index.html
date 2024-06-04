@@ -313,7 +313,7 @@
                     <li data-tab="tab1" class=" active">상세정보</li>
                     <li data-tab="tab2" onclick="secMove('1')">리뷰 <span>999+</span></li>
                     <li data-tab="tab3">유의사항</li>
-                    <li>문의</li>
+                    <li class="qnaList">문의</li>
                 </ul>
             </div>
         </section>
@@ -663,10 +663,44 @@
         </div>
 
     </main>
+    <footer></footer>
+    <!-- 문의 모달창 -->
+    <div class="qna_modal">
+        <div class="modal_con">
+            <div class="modal_tit fs20">
+                <h4>제품문의 작성</h4>
+                <img class="modal_close" src="images/ico_close24_black.png" alt="닫기">
+            </div>
+            <div class="modal_info fs13">
+                <ul>
+                    <li>문의 내역 및 답변은 마이페이지 > 내 상담내역 또는 답변확인에서
+                        확인 가능합니다.</li>
+                    <li>제품문의 처리 시간은 09:00~18:00이며, 문의는 24시간 가능합니다.</li>
+                    <li>제품과 관련 없는 내용, 홍보, 불건전한 내용의 글은 사전 동의 없이
+                        <br>&nbsp;&nbsp;&nbsp;삭제될 수 있습니다.
+                    </li>
+                    <li>제품문의 본문에는 개인정보를 입력하지 말아주세요.
+                        <br>&nbsp;&nbsp;&nbsp;고객정보 보호를 위해 마스킹 처리될 수 있습니다.
+                        <br>&nbsp;&nbsp;&nbsp;(예: 성명, 연락처, 이메일주소, 계좌번호 등)
+                    </li>
+                </ul>
+            </div>
+            <div class="modal_input">
+                <input class="qnatitle fs13" type="text" placeholder="제목을 입력하세요. (최대 30자 이내)">
+                <textarea name="qnacontent" id="qnaContent" placeholder="내용을 입력하세요."></textarea>
+            </div>
+            <div class="modal_btn_wrap">
+                <button type="submit" class="modal_btn">
+                    문의등록
+                </button>
+            </div>
 
+
+            <p></p>
+        </div>
+    </div>
 
     <script src="js/main.js"></script>
 </body>
-
 
 </html>

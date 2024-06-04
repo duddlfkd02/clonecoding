@@ -118,3 +118,19 @@ window.onload = () => {
 }
 
 
+/* 문의 모달창 */
+$(function () {
+    $('.qna_modal').hide();
+    $('.qnaList').click(function () {
+        $('.qna_modal').show();
+    })
+    $('.modal_close').click(function () {
+        $('.qna_modal').hide();
+    })
+
+    $('.modal_btn').click(function () {
+        alert('문의사항이 등록되었습니다.');
+    })
+})
+
+

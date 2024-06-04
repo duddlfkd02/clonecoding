@@ -1037,3 +1037,100 @@ section.contWrap .cont_list>li::before {
 section.contWrap .cont_list>li:first-child {
     margin-top: 20px;
 }
+
+/* 문의 모달 창 */
+.qna_modal {
+    position: fixed;
+    justify-content: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 20;
+}
+
+.qna_modal .modal_con {
+    position: absolute;
+    background: var(--color_white);
+    width: 500px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.qna_modal .modal_con .modal_tit {
+    height: 65px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 700;
+    padding: 0 20px;
+    border-bottom: 1px solid var(--color_gray3);
+}
+
+.qna_modal .modal_con .modal_tit img {
+    cursor: pointer;
+}
+
+.qna_modal .modal_con .modal_info {
+    padding: 30px;
+    color: var(--color_darkGray);
+}
+
+.qna_modal .modal_con .modal_info>ul>li {
+    margin-top: 10px;
+    position: relative;
+    text-indent: 10px;
+}
+
+.qna_modal .modal_con .modal_info>ul>li::before {
+    position: absolute;
+    display: block;
+    content: '';
+    width: 2px;
+    height: 2px;
+    background: var(--color_darkGray);
+    top: 5px;
+}
+
+.qna_modal .modal_con .modal_info>ul>li:last-child {
+    color: #bd1e31;
+}
+
+.qna_modal .modal_con .modal_input {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.qna_modal .modal_con .modal_input .qnatitle {
+    border: 1px solid var(--color_gray3);
+    padding: 15px 10px;
+}
+
+.qna_modal .modal_con .modal_input #qnaContent {
+    border: 1px solid var(--color_gray3);
+    height: 160px;
+    padding: 20px 15px;
+    resize: none;
+}
+
+.qna_modal .modal_con .modal_input .qnatitle:focus,
+.qna_modal .modal_con .modal_input #qnaContent:focus {
+    outline: none;
+}
+
+.qna_modal .modal_con .modal_btn_wrap {
+    padding: 30px;
+}
+
+.qna_modal .modal_con .modal_btn {
+    width: 100%;
+    height: 60px;
+    background: var(--color-accent);
+    color: var(--color_white);
+    text-align: center;
+    font-weight: 700;
+}
