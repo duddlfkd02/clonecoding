@@ -73,7 +73,7 @@
         </div>
     </header>
     <!-- 메뉴 -->
-    <div class="nav_wrap">
+    <div class="nav_wrap contentWidth">
         <div class="nav_inner">
             <button class="category">
                 <span><img src="images/ico_category.png" alt=""></span>
@@ -92,6 +92,37 @@
         </nav>
         <div class="nav_inner about">
             <a href="#">ABOUT</a>
+        </div>
+    </div>
+    <!-- 스크롤 내리면 고정되는 nav -->
+    <div class="nav_wrap fixedNav">
+        <div class="nav_inner fixedLogo">
+            <div>
+                <h1>
+                    <img src="images/logo_innisfree_fixed.png" alt="이니스프리 로고 검정색">
+                </h1>
+            </div>
+            <button class="fixedCategory">
+                <span><img src="images/ico_category.png" alt="햄버거 메뉴 아이콘"></span>
+                카테고리
+            </button>
+        </div>
+        <nav class="nav_inner gnb">
+            <ul class="gnb_list">
+                <li><a href="#">특가</a></li>
+                <li><a href="#">이벤트</a></li>
+                <li><a href="#">베스트</a></li>
+                <li><a href="#">쇼케이스</a></li>
+                <li><a href="#">라이브</a></li>
+                <li><a href="#">FOR ME</a></li>
+            </ul>
+        </nav>
+        <div class="nav_inner icons">
+            <span><a href="#"><img src="images/ico_search24_black.png" alt=""></a></span>
+            <span><a href="#"><img src="images/ico_login24_black.png" alt=""></a></span>
+            <span><a href="#"><img src="images/ico_mypage24_black.png" alt=""></a></span>
+            <span><a href="#"><img src="images/ico_cart24_black.png" alt=""></a></span>
+            <span class="cart_count">0</span>
         </div>
     </div>
     <!-- 서브카테고리 -->
@@ -622,7 +653,6 @@
                         <li class="listB">제일은행 325-20-460048 (주)이니스프리</li>
                     </ul>
                 </div>
-
                 <div class="shipping2">
                     <div class="contTit">
                         <h4 class="fs18">배송/교환/반품 유의사항</h4>
@@ -642,7 +672,6 @@
                         </li>
                     </ul>
                 </div>
-
                 <div class="etc">
                     <div class="contTit">
                         <h4 class="fs18">
@@ -661,9 +690,12 @@
                 </div>
             </section>
         </div>
-
     </main>
+
+
     <footer></footer>
+
+
     <!-- 문의 모달창 -->
     <div class="qna_modal">
         <div class="modal_con">

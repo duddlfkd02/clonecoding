@@ -25,7 +25,9 @@ caption {
     color: var(--color-sub1);
 }
 
-/* banner-top */
+/***********************************************/
+
+/** banner-top **/
 .banner-top {
     height: 50px;
     line-height: 50px;
@@ -44,7 +46,7 @@ caption {
     margin-top: -3px;
 }
 
-/*header */
+/** header **/
 header .innerHeader {
     max-width: 1280px;
     margin: auto;
@@ -88,7 +90,7 @@ header .innerHeader .scroll_text .scrollRoll>li {
     line-height: 50px;
 }
 
-/* header_dire */
+/** header_dire **/
 header .innerHeader .header_dire .dire_btn {
     display: flex;
 }
@@ -120,10 +122,8 @@ header .innerHeader .header_dire .dire_btn .dire_btn_list .cart_count {
     top: 67px;
 }
 
-/* nav */
+/** nav **/
 .nav_wrap {
-    max-width: 1280px;
-    margin: auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -174,7 +174,55 @@ header .innerHeader .header_dire .dire_btn .dire_btn_list .cart_count {
     text-align: end;
 }
 
-/* section.category */
+/** 고정 nav css **/
+.nav_wrap.fixedNav {
+    padding: 0 5%;
+    height: 75px;
+    background: var(--color_white);
+    position: sticky;
+    margin-top: -240px;
+    top: 0;
+    z-index: 30;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.02);
+}
+
+.nav_wrap.fixedNav .nav_inner.fixedLogo {
+    font-weight: 800;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.nav_wrap.fixedNav .nav_inner.fixedLogo .fixedCategory {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.nav_wrap.fixedNav .nav_inner.icons {
+    display: flex;
+    justify-content: end;
+    gap: 12px;
+}
+
+.nav_wrap.fixedNav .nav_inner.icons .cart_count {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 10px;
+    line-height: 16px;
+    font-weight: 700;
+    background: var(--color-accent);
+    color: var(--color_white);
+    position: absolute;
+    top: 25px;
+    right: 70px;
+}
+
+
+/** section.category **/
 section.category .sub_category .sub_category_list {
     display: flex;
     align-items: center;
@@ -986,6 +1034,16 @@ section.contWrap .contTit {
     margin-top: 60px;
     padding-bottom: 10px;
     border-bottom: 2px solid var(--color_black);
+}
+
+section.contWrap .contTit>h4 {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+section.contWrap .contTit>h4>img {
+    margin-top: -5px;
 }
 
 section.contWrap .contTit>p {

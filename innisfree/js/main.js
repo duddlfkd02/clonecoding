@@ -134,3 +134,16 @@ $(function () {
 })
 
 
+/* 고정형 nav 스크롤 */
+
+$(window).scroll(function () {
+    let scrollV = $(window).scrollTop();
+
+    if (scrollV > 148) {
+        $('.fixedNav').show();
+    } else {
+        $('.fixedNav').hide();
+    }
+})
+
+
