@@ -598,6 +598,7 @@ section.pdt_tag .vegan_mark>span {
 }
 
 /* 상세정보 위 탭메뉴 */
+
 section.pdt_tabmenu .tabmenu_wrap {
     border-bottom: 1px solid var(--color_gray3);
 }
@@ -609,6 +610,14 @@ section.pdt_tabmenu .tabmenu_wrap .tabmenu_inner {
     justify-content: space-between;
     align-items: center;
     cursor: pointer;
+}
+
+section.pdt_tabmenu .tabmenu_wrap .tabmenu_inner.sticky {
+    width: 1280px;
+    background: var(--color_white);
+    position: fixed;
+    top: 75px;
+    z-index: 20;
 }
 
 section.pdt_tabmenu .tabmenu_wrap .tabmenu_inner>li {
@@ -1191,4 +1200,112 @@ section.contWrap .cont_list>li:first-child {
     color: var(--color_white);
     text-align: center;
     font-weight: 700;
+}
+
+/* * footer * */
+footer {
+    padding: 100px 0;
+}
+
+footer .f_box1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid var(--color_gray3);
+}
+
+footer .f_box1 .customerSevice {
+    height: 100px;
+    line-height: 100px;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    color: var(--color_darkGray);
+}
+
+footer .f_box1 .customerSevice>li>b {
+    color: var(--color_black);
+    font-weight: 700;
+}
+
+footer .f_box1 .snsIcons>span {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+footer .f_box1 .snsIcons>span:last-child {
+    margin-right: 0;
+}
+
+footer .f_box2 {
+    padding-top: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .f_box2 .f_con>p {
+    margin: 15px 0;
+    color: #AAAAAA;
+    line-height: 18px;
+}
+
+footer .f_box2 .f_con>p>b {
+    color: var(--color_black);
+    font-weight: 700;
+}
+
+footer .f_box2 .f_con>p .f_conLink {
+    text-decoration: underline;
+    color: var(--color_darkGray);
+}
+
+footer .f_box2 .contact {
+    background: var(--color_gray4);
+    padding: 40px 40px 45px;
+    color: var(--color_darkGray);
+}
+
+footer .f_box2 .contact>h3 {
+    font-weight: 700;
+    color: var(--color_darkGray);
+}
+
+footer .f_box2 .contact>h3>span,
+footer .f_box2 .contact span {
+    color: #999;
+    font-size: 10px;
+    line-height: 14px;
+}
+
+footer .f_box2 .contact .contactBtn {
+    width: 75px;
+    height: 24px;
+    padding: 0 8px;
+    margin-top: 10px;
+    line-height: 24px;
+    background: #999999;
+    color: var(--color_white);
+    font-weight: 700;
+}
+
+footer .f_box2 .contact .contactBtn>a {
+    display: inline-block;
+}
+
+footer .f_box3 .awards {
+    display: flex;
+    align-items: center;
+}
+
+footer .f_box3 .awards .awards_img {
+    display: flex;
+    align-items: center;
+    margin-right: 30px;
+    color: var(--color_darkGray);
+}
+
+footer .f_box3 .awards .awards_img>span {
+    display: inline-block;
+    padding-left: 5px;
+    margin-top: 16px;
 }

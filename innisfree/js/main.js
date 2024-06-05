@@ -116,7 +116,25 @@ window.onload = () => {
     setTimeout(() => counter(counter3, max3), 2000);
     setTimeout(() => counter(counter4, max4), 2000);
 }
+/* 고정형 nav 스크롤 */
 
+$(window).scroll(function () {
+    // 메인메뉴
+    let scrollV = $(window).scrollTop();
+
+    if (scrollV > 148) {
+        $('.fixedNav').show();
+    } else {
+        $('.fixedNav').hide();
+    }
+
+    // 탭메뉴
+    if (scrollV > 1395) {
+        $('.tabmenu_inner').addClass("sticky");
+    } else {
+        $('.tabmenu_inner').removeClass("sticky");
+    }
+})
 
 /* 문의 모달창 */
 $(function () {
@@ -134,16 +152,5 @@ $(function () {
 })
 
 
-/* 고정형 nav 스크롤 */
-
-$(window).scroll(function () {
-    let scrollV = $(window).scrollTop();
-
-    if (scrollV > 148) {
-        $('.fixedNav').show();
-    } else {
-        $('.fixedNav').hide();
-    }
-})
 
 

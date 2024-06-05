@@ -18,6 +18,10 @@
 
 
     /* font-size */
+    .fs09 {
+        font-size: 0.563rem;
+    }
+
     .fs12 {
         font-size: 0.75rem;
     }
