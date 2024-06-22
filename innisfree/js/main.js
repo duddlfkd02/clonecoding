@@ -30,7 +30,7 @@ $(function () {
     $(cateMain).on('mouseleave', function () {
         $(this).children(cateSub).stop().slideUp()
     })
-})
+});
 
 
 /* 구매 수량 증가 */
@@ -69,13 +69,13 @@ $(function () {
 });
 
 // 리뷰 탭 클릭시 이동 구현중
-function secMove(sec) {
-    let offset = $('#tab' + sec).offset();
-    $('html, body').animate({ scrollTop: offset.top }, 300);
-}
-$(function () {
-    secMove(sec);
-})
+// function secMove(sec) {
+//     let offset = $('#tab' + sec).offset();
+//     $('html, body').animate({ scrollTop: offset.top }, 300);
+// }
+// $(function () {
+//     secMove(sec);
+// })
 
 
 /* sec02 review 숫자 자동 증가 */
@@ -117,14 +117,13 @@ window.onload = () => {
     setTimeout(() => counter(counter4, max4), 2000);
 }
 /* 고정형 nav 스크롤 */
-
 $(window).scroll(function () {
     // 메인메뉴
     let scrollV = $(window).scrollTop();
 
     if (scrollV > 148) {
         $('.fixedNav').show();
-    } else {
+    } else if (scrollV = 0 || scrollV < 149) {
         $('.fixedNav').hide();
     }
 
