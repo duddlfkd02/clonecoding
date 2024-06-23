@@ -10,25 +10,30 @@
 </head>
 
 <body>
-  <div class="wrapper">
-    <h1><img src="img/logo.png" alt="쇼핑몰 로고"></h1>
-    <nav>
-      <ul class="nav-item">
-        <li class="nav-list"><img src="img/blue_t.png" alt="T-shirt"></li>
-        <li class="nav-list"><img src="img/blue_p.png" alt="Pants"></li>
-        <li class="nav-list"><img src="img/blue_s.png" alt="Skirt"></li>
-        <li class="nav-list colorBtn" id="blueBtn" data-filter="blue">Blue</li>
-        <li class="nav-list colorBtn" id="yellowBtn" data-filter="yellow">Yellow</li>
-        <li class="nav-list colorBtn" id="pinkBtn" data-filter="pink">Pink</li>
-      </ul>
-    </nav>
-    <main class="main-container">
-      <ul class="main-list">
-
-      </ul>
-    </main>
-
+  <!-- Logo -->
+  <img src="img/logo.png" alt="Logo" class="logo">
+  <!-- Buttons -->
+  <div class="btn__wrap">
+    <button class="btn">
+      <img src="img/blue_t.png" alt="T-shirt" class="imgBtn">
+    </button>
+    <button class="btn">
+      <img src="img/blue_p.png" alt="Pants" class="imgBtn">
+    </button>
+    <button class="btn">
+      <img src="img/blue_s.png" alt="Skirt" class="imgBtn">
+    </button>
+    <button class="btn colorBtn blue">Blue</button>
+    <button class="btn colorBtn yellow">Yellow</button>
+    <button class="btn colorBtn pink">Pink</button>
   </div>
+  <!-- Items -->
+  <ul class="items">
+    <li class="item">
+      <img src="img/blue_p.png" alt="T-shirt" class="item__thumbnail">
+      <span class="item__description">male, large</span>
+    </li>
+  </ul>
 </body>
 
 </html>
